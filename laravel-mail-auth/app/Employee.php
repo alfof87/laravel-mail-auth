@@ -14,4 +14,10 @@ class Employee extends Model
     'private_code',
     'location_id'
   ];
+  public function location(){
+   return $this -> belongsTo(Location::class);
+  }
+  public function tasks(){
+    return $this -> belongsToMany(Task::class);
+  }
 }

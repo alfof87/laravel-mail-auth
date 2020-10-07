@@ -13,4 +13,5 @@ class LocationSeeder extends Seeder
     {
         factory (Employee::class, 100) -> create();
     }
+ 
 }

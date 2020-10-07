@@ -13,4 +13,7 @@ class Task extends Model
     'start_date',
     'end_date'
   ];
+  public function employees(){
+  return $this -> belongsToMany(Employee::class);
+}
 }
