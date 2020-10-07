@@ -13,8 +13,14 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    <ul>
+                      @foreach ($emps as $emp)
+                        <li class="flex">
+                          <a href="{{ route('emp.show', $emp -> id) }}">{{ $emp -> firstname }} {{ $emp -> lastname }}</a>
+                        </li>
+                      @endforeach
+                      </ul>
 
-                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>
