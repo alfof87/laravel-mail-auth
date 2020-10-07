@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Employee;
+use App\Task;
 class TaskSeeder extends Seeder
 {
     /**

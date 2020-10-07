@@ -9,7 +9,3 @@ Route::get('/show/{id}', 'GuestController@show') -> name('emp.show');
 Route::get('/destroy/{id}', 'LoggedController@destroy') -> name('emp.destroy');
 
 // Auth::routes();
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
